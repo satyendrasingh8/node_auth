@@ -56,7 +56,7 @@ try{
     await this.save();
     return token;
 }catch(e){
-res.send("the error part ",e);
+res.status(400).send("the error part ",e);
 console.log("the error part ",e);
 }
 }
